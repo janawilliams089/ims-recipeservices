@@ -16,10 +16,10 @@ app.include_router(addons.router, prefix='/Add ons', tags=['Add ons'])
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",  #  ims frontend
-        "http://192.168.100.10:3000",  # ims frontend (local network)
-        "http://127.0.0.1:4000",  # auth service
-        "http://localhost:4000",
+        "https://bleu-ims-beta.vercel.app",  #  ims frontend
+        # "http://192.168.100.10:3000",
+        "https://authservices-npr8.onrender.com",  # auth service
+        # "http://localhost:4000",
           
     ],
     allow_credentials=True,
